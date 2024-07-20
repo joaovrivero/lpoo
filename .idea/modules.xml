@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/avaliacao1/avaliacao1.iml" filepath="$PROJECT_DIR$/avaliacao1/avaliacao1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heranca-multipla/heranca-multipla.iml" filepath="$PROJECT_DIR$/heranca-multipla/heranca-multipla.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heranca-multipla2/heranca-multipla2.iml" filepath="$PROJECT_DIR$/heranca-multipla2/heranca-multipla2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/heranca-simples/heranca-simples.iml" filepath="$PROJECT_DIR$/heranca-simples/heranca-simples.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista1/lista1.iml" filepath="$PROJECT_DIR$/lista1/lista1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lista2/lista2.iml" filepath="$PROJECT_DIR$/lista2/lista2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lpoo.iml" filepath="$PROJECT_DIR$/lpoo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo1/objetivo1.iml" filepath="$PROJECT_DIR$/objetivo1/objetivo1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/objetivo2/objetivo2.iml" filepath="$PROJECT_DIR$/objetivo2/objetivo2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/polimorfismo/polimorfismo.iml" filepath="$PROJECT_DIR$/polimorfismo/polimorfismo.iml" />
+    </modules>
+  </component>
+</project>
