@@ -1,14 +1,14 @@
+
 package model;
 
-public class Vendedor extends Funcionario {
-    public double taxaDeComissao;
+public class Vendedor extends Funcionario{
+    private double taxaDeComissao;
 
-    public Vendedor(double taxaDeComissao) {
-        this.taxaDeComissao = taxaDeComissao;
+    public Vendedor() {
     }
 
-    public Vendedor(String nome, String sobrenome, double salario, double taxaDeComissao) {
-        super(nome, sobrenome, salario);
+    public Vendedor(String nome, String sobrenome, double salario, int quantidadeDeAcoes, double valorDaAcao, double taxaDeComissao) {
+        super(nome, sobrenome, salario, quantidadeDeAcoes, valorDaAcao);
         this.taxaDeComissao = taxaDeComissao;
     }
 
@@ -22,18 +22,12 @@ public class Vendedor extends Funcionario {
 
     @Override
     public String toString() {
-        return "Vendedor{" +
+        return "\nVendedor{" +
                 "taxaDeComissao=" + taxaDeComissao +
-                '}';
-    }
-
-    @Override
-    public int getQuantidadeDeAcoes() {
-        return 0;
-    }
-
-    @Override
-    public double getValorDaAcao() {
-        return 0;
+                ", nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", salario=" + salario +
+                ", quantidade de ações= " + getQuantidadeDeAcoes() +
+                "} ";
     }
 }

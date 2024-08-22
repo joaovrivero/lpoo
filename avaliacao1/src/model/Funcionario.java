@@ -1,18 +1,23 @@
+
 package model;
 
-public abstract class Funcionario implements Socio {
-    private String nome;
-    private String sobrenome;
-    private double salario;
+public abstract class Funcionario implements Socio{
+
+    protected String nome;
+    protected String sobrenome;
+    protected double salario;
+    private int quantidadeDeAcoes;
+    private double valorDaAcao;
 
     public Funcionario() {
-
     }
 
-    public Funcionario(String nome, String sobrenome, double salario) {
+    public Funcionario(String nome, String sobrenome, double salario, int quantidadeDeAcoes, double valorDaAcao) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.salario = salario;
+        this.quantidadeDeAcoes = quantidadeDeAcoes;
+        this.valorDaAcao = valorDaAcao;
     }
 
     public String getNome() {
@@ -40,11 +45,12 @@ public abstract class Funcionario implements Socio {
     }
 
     @Override
-    public String toString() {
-        return "Funcionario{" +
-                "nome='" + nome + '\'' +
-                ", sobrenome='" + sobrenome + '\'' +
-                ", salario=" + salario +
-                '}';
+    public int getQuantidadeDeAcoes() {
+        return this.quantidadeDeAcoes;
+    }
+
+    @Override
+    public double getValorDaAcao() {
+        return this.valorDaAcao;
     }
 }

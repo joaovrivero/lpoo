@@ -1,37 +1,34 @@
+
 package model;
 
-public class Gerente extends Funcionario {
-    public double taxaDeBonificacao;
+public class Gerente extends Funcionario{
+    private double taxaDeBonificacao;
 
-    public Gerente() {
-        super();
-    }
-
-
-
-    public Gerente(String nome, String sobrenome, double salario, double taxaDeBonificacao) {
-        super(nome, sobrenome, salario);
+    public Gerente(double taxaDeBonificacao) {
         this.taxaDeBonificacao = taxaDeBonificacao;
     }
 
-    public Double taxaDeBonificacao() {
-        return this.getSalario() * 0.5;
+    public Gerente(String nome, String sobrenome, double salario, int quantidadeDeAcoes, double valorDaAcao, double taxaDeBonificacao) {
+        super(nome, sobrenome, salario, quantidadeDeAcoes, valorDaAcao);
+        this.taxaDeBonificacao = taxaDeBonificacao;
     }
 
-    @Override
-    public int getQuantidadeDeAcoes() {
-        return 0;
+    public double getTaxaDeBonificacao() {
+        return taxaDeBonificacao;
     }
 
-    @Override
-    public double getValorDaAcao() {
-        return 0;
+    public void setTaxaDeBonificacao(double taxaDeBonificacao) {
+        this.taxaDeBonificacao = taxaDeBonificacao;
     }
 
     @Override
     public String toString() {
-        return "Gerente{" +
+        return "\nGerente{" +
                 "taxaDeBonificacao=" + taxaDeBonificacao +
-                '}';
+                ", nome='" + nome + '\'' +
+                ", sobrenome='" + sobrenome + '\'' +
+                ", salario=" + salario +
+                ", quantidade de ações= " + getQuantidadeDeAcoes() +
+                "} ";
     }
 }

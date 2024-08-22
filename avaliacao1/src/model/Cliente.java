@@ -1,18 +1,22 @@
+
 package model;
 
-public class Cliente implements Socio {
-    private String nome;
-    private String sobrenome;
-    private String email;
+public abstract class Cliente implements Socio{
+    protected String nome;
+    protected String sobrenome;
+    protected String email;
+    private int quantidadeDeAcoes;
+    private double valorDaAcao;
 
     public Cliente() {
-
     }
 
-    public Cliente(String nome, String sobrenome, String email) {
+    public Cliente(String nome, String sobrenome, String email, int quantidadeDeAcoes, double valorDaAcao) {
         this.nome = nome;
         this.sobrenome = sobrenome;
         this.email = email;
+        this.quantidadeDeAcoes = quantidadeDeAcoes;
+        this.valorDaAcao = valorDaAcao;
     }
 
     public String getNome() {
@@ -39,22 +43,25 @@ public class Cliente implements Socio {
         this.email = email;
     }
 
-    @Override
-    public String toString() {
-        return "Cliente{" +
-                "nome='" + nome + '\'' +
-                ", sobrenome='" + sobrenome + '\'' +
-                ", email='" + email + '\'' +
-                '}';
+    public void setQuantidadeDeAcoes(int quantidadeDeAcoes) {
+        this.quantidadeDeAcoes = quantidadeDeAcoes;
+    }
+
+    public double geValorDaAcao() {
+        return valorDaAcao;
+    }
+
+    public void setValorDaAcao(double valorDaAcao) {
+        this.valorDaAcao = valorDaAcao;
     }
 
     @Override
     public int getQuantidadeDeAcoes() {
-        return 0;
+        return this.quantidadeDeAcoes;
     }
 
     @Override
     public double getValorDaAcao() {
-        return 0;
+        return this.valorDaAcao;
     }
 }
